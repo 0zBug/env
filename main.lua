@@ -8,7 +8,7 @@ return setmetatable({
     end,
     set = function(key, value)
         writefile(string.format("🔑/%s.dat", key), value)
-    end
+    end,
     delete = function(key)
         delfile(string.format("🔑/%s.dat", key))
     end
